@@ -17,7 +17,7 @@ const SearchBox= ()=>{
     }
 
     let filteredrobo= robots.filter((item)=>{
-        return item.name.includes(current)
+        return item.name.toLocaleLowerCase().includes(current.toLocaleLowerCase())
     })
     console.log(filteredrobo)
     
